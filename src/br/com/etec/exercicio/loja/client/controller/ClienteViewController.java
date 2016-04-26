@@ -110,11 +110,11 @@ public class ClienteViewController extends ClienteThreads {
 
         } catch (NegocioException ne) {
 
-            JOptionPane.showMessageDialog(cadastrarClienteView, ConstantesNomenclaturas.MENU_CLIENTE_TITLE_MESSAGE, ne.getMessage(), JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(cadastrarClienteView, ne.getMessage(), ConstantesNomenclaturas.MENU_CLIENTE_TITLE_MESSAGE, JOptionPane.INFORMATION_MESSAGE);
 
         } catch (Exception ex) {
 
-            JOptionPane.showMessageDialog(cadastrarClienteView, ConstantesNomenclaturas.MENU_CLIENTE_TITLE_MESSAGE, ex.getMessage(), JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(cadastrarClienteView, ex.getMessage(), ConstantesNomenclaturas.MENU_CLIENTE_TITLE_MESSAGE, JOptionPane.ERROR_MESSAGE);
         }
 
     }
